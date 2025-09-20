@@ -1,0 +1,149 @@
+/* ==========================================
+   ROOBERT FONT FAMILY IMPLEMENTATION
+   ========================================== */
+
+/* Roobert Light */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/01-Roobert-TRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Roobert Light Italic */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/02-Roobert-TRIAL-Light-Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Roobert Regular */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/03-Roobert-TRIAL-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Roobert Regular Italic */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/04-Roobert-TRIAL-Regular-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Roobert Medium */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/05-Roobert-TRIAL-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Roobert Medium Italic */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/06-Roobert-TRIAL-Medium-Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Roobert Bold */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/09-Roobert-TRIAL-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Roobert Bold Italic */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/10-Roobert-TRIAL-Bold-Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Roobert Heavy (Extra Bold) */
+@font-face {
+    font-family: 'Roobert';
+    src: url('../assets/fonts/Roobert-Font/11-Roobert-TRIAL-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ==========================================
+   UTILITY CLASSES FOR ROOBERT WEIGHTS
+   ========================================== */
+
+.font-roobert {
+    font-family: 'Roobert', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-heavy {
+    font-weight: 800;
+}
+
+/* ==========================================
+   BASE STYLES WITH ROOBERT
+   ========================================== */
+
+body {
+    font-family: 'Roobert', 'Segoe UI', 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roobert', 'Segoe UI', 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Headings específicos con diferentes pesos */
+h1 {
+    font-weight: 800; /* Heavy */
+}
+
+h2 {
+    font-weight: 700; /* Bold */
+}
+
+h3 {
+    font-weight: 500; /* Medium */
+}
+
+p {
+    font-weight: 400; /* Regular */
+}
+
+.subtitle {
+    font-weight: 300; /* Light */
+}
