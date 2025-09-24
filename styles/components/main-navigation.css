@@ -1,0 +1,188 @@
+/* NAVIGATION STYLES */
+.main-nav {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 8px 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav__logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.main-nav__mobile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.main-nav__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Checkbox oculto para controlar el menú */
+#menu-toggle {
+  display: none;
+}
+
+/* Etiqueta que actúa como botón del menú */
+.menu-toggle-label {
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+  position: relative;
+}
+
+/* Ícono hamburguesa */
+  .hamburger-menu {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+}
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+  height: 3px;
+}
+.hamburger-menu span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.hamburger-menu span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+
+.hamburger-menu span:nth-child(3) {
+  top: 16px;
+  transform-origin: left center;
+}
+
+   /* Animación hamburguesa a X cuando el menú está activo */
+#menu-toggle:checked ~ .main-nav .main-nav__container .menu-toggle-label .hamburger-menu span:nth-child(1) {
+  top: 0px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .main-nav .main-nav__container .menu-toggle-label .hamburger-menu span:nth-child(2) {
+  opacity: 0;
+  width: 0%;
+}
+
+#menu-toggle:checked ~ .main-nav .main-nav__container .menu-toggle-label .hamburger-menu span:nth-child(3) {
+  top: 16px;
+  left: 8px;
+  transform: rotate(-45deg);
+}
+
+
+.main-nav__list {
+  position: fixed;
+  top: 50px;
+  backdrop-filter: blur(20px);
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 999;
+  overflow: hidden;
+  max-height: 0;
+  width: 344px;
+  height: auto;
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid #1D2029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+  box-shadow: 0 16px 32px 0 rgba(9, 10, 13, 1);
+}
+.item-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #1D2029;
+}
+
+/* Menú activo cuando el checkbox está marcado */
+#menu-toggle:checked ~ .main-nav {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  max-height: 80vh;
+}
+
+/* Overlay para cerrar el menú al hacer clic fuera */
+.menu-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 998;
+  position: fixed;
+}
+
+#menu-toggle:checked ~ .menu-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-nav__item {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  list-style: none;
+}
+.main-nav__item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.link-active {
+  background-color: #1D2029;
+  color: var(--black);
+  border-radius: 8px;
+  border-bottom: 1px solid var(--platzi-green);
+  width: 100%;
+}
+.main-nav__logo-link {
+  display: flex;
+  align-items: center;
+}

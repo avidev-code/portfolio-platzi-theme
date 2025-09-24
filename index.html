@@ -17,10 +17,20 @@
             <img src="./assets/logos/avidevcode-hor-logo.png" alt="main-logo-avidevcode">
           </a>
         </div>
+
         <button class="main-nav__mobile-button" aria-label="Open menu">
-          <img src="./assets/icons/mobile-icon.svg" alt="Hamburguer menu icon">
+          <label for="menu-toggle" class="menu-toggle-label">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
         </button>
       </div>
+
+      <!-- Overlay para cerrar el menú al hacer clic fuera -->
+      <label for="menu-toggle" class="menu-overlay"></label>
 
       <!-- THIS IS THE LIST MENU SECTION-->
       <ul class="main-nav__list">
