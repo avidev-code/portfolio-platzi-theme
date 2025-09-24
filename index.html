@@ -7,33 +7,65 @@
   <title>Portfolio Platzi Theme</title>
 </head>
 <body>
+  
+  <!-- THIS IS THE HEADER SECTION-->
   <header>
     <nav class="main-nav">
-      <div class="main-logo">
-        <a href="#home">
-          <img src="./assets/logos/avidevcode-hor-logo.png" alt="main-logo-avidevcode">
-        </a>
+      <div class="main-nav__container">
+        <div class="main-nav__logo">
+          <a href="#home">
+            <img src="./assets/logos/avidevcode-hor-logo.png" alt="main-logo-avidevcode">
+          </a>
+        </div>
+        <button class="main-nav__mobile-button" aria-label="Open menu">
+          <img src="./assets/icons/mobile-icon.svg" alt="Hamburguer menu icon">
+        </button>
       </div>
-      <div class="hamburguer-icon">
-        <a href="#">
-          <img src="./assets/icons/mobile-icon.svg" alt="">
-        </a>
-      </div>
+
+      <!-- THIS IS THE LIST MENU SECTION-->
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#home" class="main-nav__link link-active">Home</a>
+        </li>
+        <div class="item-divider"></div>
+        <li class="main-nav__item">
+          <a href="#hero-section" class="main-nav__link">Sobre mí</a>
+        </li>
+        <div class="item-divider"></div>
+        <li class="main-nav__item">
+          <a href="#projects" class="main-nav__link">Mis Proyectos</a>
+        </li>
+        <div class="item-divider"></div>
+        <li class="main-nav__item">
+          <a href="#contact" class="main-nav__link">Blog</a>
+        </li>
+        <div class="item-divider"></div>
+        <li class="main-nav__item">
+          <a href="#contact" class="main-nav__link">Habilidades</a>
+        </li>
+        <div class="item-divider"></div>
+        <li class="main-nav__item">
+          <a href="#contact" class="main-nav__link">Contacto</a>
+        </li>
+        <div class="item-divider"></div>
+      </ul>
+
     </nav>
   </header>
 
+  <!-- THIS IS THE HERO SECTION-->
   <main>
-    <section class="hero-content">
-      <div class="main-text">
+    <section class="main-hero" id="hero-section">
+      <div class="main-hero__text">
         <p>¡Hola!</p>
         <h1>Soy José David Albarrán</h1>
         <span>UI/UX Designer &</span><h2>Desarrollador web en formación</h2>
         <p>Estoy aprendiendo HTML y CSS para crear sitios web funcionales. Mi pasión: Transformar ideas en experiencias web increíbles</p>
       </div>
 
-        <div class="main-buttons">
-          <a href="#projects" class="btn-primary">Ver mis proyectos</a>
-          <a href="#contact" class="btn-secondary">Contáctame</a>
+      <div class="main-buttons">
+        <a href="#projects" class="btn-primary">Ver mis proyectos</a>
+        <a href="#contact" class="btn-secondary">Contáctame</a>
       </div>
 
       <div class="main-stats">
